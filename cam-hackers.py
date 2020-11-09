@@ -65,7 +65,7 @@ try:
 
     country = countries[num-1]
     res = requests.get(
-        f"https://www.insecam.org/en/bycountry/{country}", headers=headers
+        f"https://www.insecam.org/en/bycountry/{country}, headers=headers"
     )
     last_page = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
 
